@@ -27,7 +27,15 @@ import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged }
 import { getFirestore, doc, setDoc, onSnapshot } from 'firebase/firestore';
 
 // --- Firebase Konfiguration ---
-const firebaseConfig = JSON.parse(__firebase_config);
+const firebaseConfig = {
+  apiKey: "AIzaSyDupjOG-Fe1Jub_Bdw_-rMEYIizPps7IHc",
+  authDomain: "abiplaner-b7da3.firebaseapp.com",
+  projectId: "abiplaner-b7da3",
+  storageBucket: "abiplaner-b7da3.firebasestorage.app",
+  messagingSenderId: "381388636961",
+  appId: "1:381388636961:web:8327353c796c5196b67460",
+  measurementId: "G-G9GSCCGENC"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);

@@ -435,8 +435,8 @@
 
                         {/* Stepper Navigation */}
                         <div className={`p-6 rounded-[32px] shadow-sm border mb-12 transition-all duration-500 ${isDarkMode ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'}`}>
-                            <nav className="flex justify-between items-center max-w-3xl mx-auto relative px-4">
-                                <div className={`absolute top-7 left-4 right-4 h-1 z-0 rounded-full transition-colors duration-700 ${isDarkMode ? 'bg-slate-800' : 'bg-slate-200'}`}></div>
+                            <nav className="flex justify-between items-start max-w-3xl mx-auto relative px-4">
+                                <div className={`absolute top-8 left-4 right-4 h-1 z-0 rounded-full transition-colors duration-700 ${isDarkMode ? 'bg-slate-800' : 'bg-slate-200'}`}></div>
                                 {[
                                     { id: 1, label: 'Fächerwahl', icon: <Settings size={20}/> },
                                     { id: 2, label: 'Noten', icon: <Calculator size={20}/> },
@@ -453,7 +453,7 @@
                                             } group-hover:shadow-md active:scale-95`}>
                                                 {step > s.id ? <CheckCircle2 size={28} /> : s.icon}
                                             </div>
-                                            <span className={`text-[10px] font-black uppercase tracking-widest absolute -bottom-6 whitespace-nowrap transition-colors duration-500 ${step === s.id ? 'text-indigo-500 dark:text-indigo-400' : 'text-slate-400 dark:text-slate-500'}`}>{s.label}</span>
+                                            <span className={`text-[10px] font-black uppercase tracking-widest whitespace-nowrap transition-colors duration-500 ${step === s.id ? 'text-indigo-500 dark:text-indigo-400' : 'text-slate-400 dark:text-slate-500'}`}>{s.label}</span>
                                         </button>
                                     </div>
                                 ))}
